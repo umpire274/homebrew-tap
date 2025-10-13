@@ -1,22 +1,22 @@
 class Librius < Formula
   desc "A fast, minimalist CLI to manage your personal book collection — built in Rust."
   homepage "https://github.com/umpire274/librius"
-  version "0.1.1"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/umpire274/librius/releases/download/v#{version}/librius-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "f5f56986aeb22f49c406efef21f2a2ec04fb5ad6d24990fac86be67d41a7bf1c"
+      sha256 "c2f8486a2248abfdd7670558e7148c8f583a82ec32de83649e53ad9feb5ae005"
     elsif Hardware::CPU.arm?
       url "https://github.com/umpire274/librius/releases/download/v#{version}/librius-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "e3d81aa1c16e52823b62a3a9721aa941d1ecfadf0dd8db7c0b938b723c5ed190"
+      sha256 "8a317e9728170e7aa084311d9f01cfdd1a4fb1f27f6cd1a17d6dd6998f739b94"
     end
   end
 
   on_linux do
     url "https://github.com/umpire274/librius/releases/download/v#{version}/librius-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "24cd5707f9bdd5551108ab423e814f0a3cccb331a5ffa7454e34cdd6bcd7be81"
+    sha256 "beab9fd46a5c020ba539833820a7299db50a3087b2de75979247eb6b5f893e7b"
   end
 
   # facoltativo, aiuta `brew livecheck`
