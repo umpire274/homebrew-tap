@@ -1,22 +1,22 @@
 class Rfortune < Formula
   desc "Rust-based clone of the classic UNIX 'fortune' command"
   homepage "https://github.com/umpire274/rFortune"
-  version "0.5.3"
+  version "0.5.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/umpire274/rFortune/releases/download/v#{version}/rfortune-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "5a7fecd9631ed7e2753611fec07d730ec20d540ffb390c36915905033fe83aff"
+      sha256 "85f3fe1d454b3f90a602f88451f67ee597cba878a44514be27b6ad4a9f03872c"
     elsif Hardware::CPU.arm?
       url "https://github.com/umpire274/rFortune/releases/download/v#{version}/rfortune-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "88f5198f3fa10fe2ed53aca312fc73620cd3bad142f6f7d40632e2bb83e65abb"
+      sha256 "ba12aab7eaa4ce053f7f4f071a81e3c8f81dc1c7b171d70b5c685e460943fde9"
     end
   end
 
   on_linux do
     url "https://github.com/umpire274/rFortune/releases/download/v#{version}/rfortune-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "9d50f9bf24b836cb9799a2792e108f2d685e9288ef2749bf6fe86010f951670d"
+    sha256 "a1cb9e7fdd2c828246866e97e99f2952c9e5f5b602d731d554f65e7c85ebc33a"
   end
 
   # facoltativo, aiuta `brew livecheck`
