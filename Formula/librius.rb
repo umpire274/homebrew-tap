@@ -7,16 +7,16 @@ class Librius < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/umpire274/librius/releases/download/v#{version}/librius-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "7e6634ae1693571ad098f7622b0e7b43dfdf03de9c13f3ad0f1185ff054c26e4"
+      sha256 "edf7f534e4e3ee5204a187dd9dad39cc7fed19e14b4d356bb92d68766697bcea"
     elsif Hardware::CPU.arm?
       url "https://github.com/umpire274/librius/releases/download/v#{version}/librius-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "83644aaafdb78e318b00b81d0d6a41680632c7878032b4d9107af1e073c685c9"
+      sha256 "a0fa726f5fc0d84a459a4857ee4f59c269ad39594372868121bbe4055776b5f6"
     end
   end
 
   on_linux do
     url "https://github.com/umpire274/librius/releases/download/v#{version}/librius-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "32a27d8347b865a46d68e75ea4efbe37121e47b00e48ea17e428be8408512fdf"
+    sha256 "f3403111a75eb88ebf8540086779f3db4bc4c549b4dcd71e984be7bf045c41c9"
   end
 
   # facoltativo, aiuta `brew livecheck`
