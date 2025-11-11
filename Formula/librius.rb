@@ -1,7 +1,7 @@
 class Librius < Formula
   desc "A fast, minimalist CLI to manage your personal book collection — built in Rust."
   homepage "https://github.com/umpire274/librius"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
