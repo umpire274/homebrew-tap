@@ -7,16 +7,16 @@ class Rtimelogger < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/umpire274/rTimelogger/releases/download/v#{version}/rtimelogger-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "74d1f9f7607455032e280b4ea7a0ea5f5b886c9b5e432f2a4df9e775bc32d7de"
+      sha256 "5a329e07a803fe42e281e65a76289f6cbb7ab5b57443f1baf4d7295f8583fdf1"
     elsif Hardware::CPU.arm?
       url "https://github.com/umpire274/rTimelogger/releases/download/v#{version}/rtimelogger-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "5a12086aea1f81a16402a1384208960b105203747662a6041d6f58d0a8ca3d8c"
+      sha256 "eb4e71c66d1fc83e19566a43c6f3f700d3ef2e0facfdcd99d0db9687b54c81e7"
     end
   end
 
   on_linux do
     url "https://github.com/umpire274/rTimelogger/releases/download/v#{version}/rtimelogger-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "7356610fc5693e145660609ea10dc9901a2682712461d3ea02726835d15fbb6f"
+    sha256 "bbb83c24fa549e2aaa8e532d146164e6f5331c41bffa66228d5e02d8bc86220a"
   end
 
   # facoltativo, aiuta `brew livecheck`
